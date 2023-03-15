@@ -1,23 +1,29 @@
 #include <stdio.h>
-
-int main(void)
+int main(int argc, char const *argv[])
 {
-    // your code goes here
     int t;
     scanf("%d", &t);
     while (t--)
     {
-        int a, b, c;
-        scanf("%d %d %d", &a, &b, &c);
+        int n;
+        scanf("%d", &n);
 
-        if (a > b + c || b > c + a || c > a + b)
+        int arr[n];
+
+        for (int i = 0; i < n; i++)
         {
-            printf("YES\n");
+            scanf("%d", &arr[i]);
         }
-        else
+
+        for (int i = 0; i < n; i++)
         {
-            printf("NO\n");
+            if (arr[i] % 2 == 0)
+            {
+                printf("YES\n");
+            }
+            else if ()
         }
     }
+
     return 0;
 }
