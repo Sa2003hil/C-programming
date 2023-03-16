@@ -31,7 +31,9 @@ int main(int argc, char const *argv[])
             }
         }
 
-        printf("%d\n", count);
+        int ign = n - m - (k - count);
+
+        printf("%d %d\n", count, ign);
     }
 
     return 0;
