@@ -3,7 +3,9 @@ int fibonnaci(int n);
 
 int main(int argc, char const *argv[])
 {
-    printf("%d", fibonnaci(7));
+    int n;
+    scanf("%d", &n);
+    printf("%d", fibonnaci(n));
     return 0;
 }
 
