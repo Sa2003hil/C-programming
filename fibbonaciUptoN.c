@@ -10,17 +10,18 @@ int main(int argc, char const *argv[])
     for (int i = start; i <= end; i++)
     {
         temp = i;
-        while (i != 0)
+        while (temp != 0)
         {
             rem = temp % 10;
             rev = (rev * 10) + rem;
             temp = temp / 10;
         }
 
-        if (temp == rev)
+        if (rev == i)
         {
             printf("%d ", i);
         }
+        rev = 0;
     }
 
     return 0;
