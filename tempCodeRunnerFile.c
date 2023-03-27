@@ -1,42 +1,51 @@
 #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-int main(void)
+int marks_summation(int *marks, int number_of_students, char gender)
 {
-    // your code goes here
-    int t;
-    scanf("%d", &t);
-    while (t--)
+    // Write your code here.
+    int sum;
+    if (gender == 'g')
     {
-        int a1, b1;
-        scanf("%d %d", &a1, &b1);
-
-        int sum1 = a1 + b1;
-        printf("%d\n", sum1);
-
-        int a2, b2;
-        scanf("%d %d", &a2, &b2);
-
-        int sum2 = a2 + b2;
-        printf("%d\n", sum2);
-
-        int a3, b3;
-        scanf("%d %d", &a3, &b3);
-
-        int sum3 = a3 + b3;
-        printf("%d\n", sum3);
-
-        if (sum1 > sum2 && sum1 > sum3)
+        for (int student = 0; student < number_of_students; student++)
         {
-            printf("%d\n", sum1);
-        }
-        else if (sum2 > sum1 && sum2 > sum3)
-        {
-            printf("%d\n", sum2);
-        }
-        else if (sum3 > sum1 && sum3 > sum2)
-        {
-            printf("%d\n", sum3);
+            if (student % 2 == 0)
+            {
+                sum = sum + marks[student];
+            }
         }
     }
+    else if (gender == 'b')
+    {
+        for (int student = 0; student < number_of_students; student++)
+        {
+            if (student % 2 != 0)
+            {
+                sum = sum + marks[student];
+            }
+        }
+    }
+}
+int main()
+{
+    int number_of_students;
+    char gender;
+    int sum;
+
+    scanf("%d", &number_of_students);
+    int *marks = (int *)malloc(number_of_students * sizeof(int));
+
+    for (int student = 0; student < number_of_students; student++)
+    {
+        scanf("%d", (marks + student));
+    }
+
+    scanf(" %c", &gender);
+    sum = marks_summation(marks, number_of_students, gender);
+    printf("%d", sum);
+    free(marks);
+
     return 0;
 }
