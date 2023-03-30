@@ -47,6 +47,7 @@ int main(void)
             arr3[in] = arr1[i];
             i++;
         }
+
         else
         {
             arr3[in] = arr2[j];
