@@ -29,7 +29,7 @@ int main(void)
     int in;
     for (in = 0; in < n + m; in++)
     {
-        if (i < n && j < k)
+        if (i < n && j < m)
         {
             if (arr1[i] < arr2[j])
             {

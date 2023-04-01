@@ -6,8 +6,12 @@ int fact(int n);
 
 int main()
 {
+    int n;
 
-    printf("the factorial is : %d", fact(4));
+    printf("Enter the number here:");
+    scanf("%d", &n);
+
+    printf("the factorial is : %d", fact(n));
     return 0;
 }
 
@@ -26,46 +30,46 @@ int fact(int n)
 
 //**********************************************************************************************
 
-program to convert celcius to farnehite
+// program to convert celcius to farnehite
 
-#include <stdio.h>
+// #include <stdio.h>
 
-    float
-    conv(float cel);
+//     float
+//     conv(float cel);
 
-int main(int argc, char const *argv[])
-{
-    float farnehite = conv(0);
-    printf("degree farnehite = %f", farnehite);
+// int main(int argc, char const *argv[])
+// {
+//     float farnehite = conv(0);
+//     printf("degree farnehite = %f", farnehite);
 
-    return 0;
-}
+//     return 0;
+// }
 
-float conv(float cel)
-{
+// float conv(float cel)
+// {
 
-    float farnehite = (cel * 0.18) + 32;
-    return farnehite;
-}
+//     float farnehite = (cel * 0.18) + 32;
+//     return farnehite;
+// }
 
-//**********************************************************************************************
+// //**********************************************************************************************
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int calcmarks(int che, int phy, int math);
+// int calcmarks(int che, int phy, int math);
 
-int main(int argc, char const *argv[])
-{
-    int che = 90;
-    int phy = 99;
-    int math = 94;
+// int main(int argc, char const *argv[])
+// {
+//     int che = 90;
+//     int phy = 99;
+//     int math = 94;
 
-    printf("The percentage is : %d", calcmarks(che, phy, math));
+//     printf("The percentage is : %d", calcmarks(che, phy, math));
 
-    return 0;
-}
+//     return 0;
+// }
 
-int calcmarks(int che, int phy, int math)
-{
-    return ((che + phy + math) / 3);
-}
+// int calcmarks(int che, int phy, int math)
+// {
+//     return ((che + phy + math) / 3);
+// }
