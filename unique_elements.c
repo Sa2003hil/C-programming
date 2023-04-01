@@ -1,3 +1,5 @@
+// Unique elements by using frequency method
+
 #include <stdio.h>
 #define max 100
 
