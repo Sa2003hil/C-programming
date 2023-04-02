@@ -1,28 +1,18 @@
 #include <stdio.h>
-int fibonnaci(int n);
 
-int main(int argc, char const *argv[])
+void main()
 {
-    int n;
+    int i, c = 0, n;
+    int a = 0;
+    int b = 1;
+    printf("\nEnter a number to generate fibonacci series upto nth term\n");
     scanf("%d", &n);
-    printf("%d", fibonnaci(n));
-    return 0;
-}
-
-int fibonnaci(int n)
-{
-
-    if (n == 0)
+    printf("Fibonacci series upto %d term:-\n", n);
+    while (c <= n)
     {
-        return 0;
+        printf("%d ", c);
+        a = b;
+        b = c;
+        c = a + b;
     }
-    if (n == 1)
-    {
-        return 1;
-    }
-
-    int fibNm1 = fibonnaci(n - 1);
-    int finNm2 = fibonnaci(n - 2);
-    int result = fibNm1 + finNm2;
-    return result;
 }
