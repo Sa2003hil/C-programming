@@ -10,8 +10,9 @@ int main(int argc, char const *argv[])
         for (j = 1; j <= i; j++)
         {
             printf("%c ", alphabet);
-        }
+                }
         ++alphabet;
+
         printf("\n");
     }
 
