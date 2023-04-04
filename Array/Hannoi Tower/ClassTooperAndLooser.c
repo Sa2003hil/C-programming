@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
         }
         if (arr[i] < min1)
         {
-            min2 = min2;
+            min2 = min1;
             min1 = arr[i];
         }
         else if (arr[i] < min2 && arr[i] != min1)
