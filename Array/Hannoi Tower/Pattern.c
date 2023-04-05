@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     {
         for (j = 1; j <= num - i; j++)
         {
-            printf("%d ", num);
+            printf("%d", num);
         }
         printf("\n");
     }

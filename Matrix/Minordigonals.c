@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
     {
         for (j = 0; j < max; j++)
         {
-            if (i + j == (max + 1) - 2) // this is the formula
+            if (i == j) // this is the another formula  (i + j == (max + 1) - 2)
             {
                 sum += arr[i][j];
             }
