@@ -20,6 +20,8 @@ int main(int argc, char const *argv[])
     cse[0].cgpa = 9.9;
     strcpy(ece[0].name, "sahil");
 
+    // this is the short way to store the elements in the structure in array  form
+
     struct student ecc = {122, 8.9, "kashish"};
 
     printf("name=%s\n", ece[0].name);
